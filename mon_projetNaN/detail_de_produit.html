@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anon - eCommerce Website</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+  
+
+  <header>
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Entrer le non du produit">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+        <div class="header-user-actions">
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+          <a href="./connexion.html">
+          <div class="header-search-container">
+            <input type="button" class="search-field" value="Connexion">
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category" style="margin-right: 50px;">
+            <a href="index.html" class="menu-title">Accueil</a>
+          </li>
+          <li class="menu-category" style="margin-right: 50px;">
+            <a href="tout_les_produits.html" class="menu-title">Magazin</a>
+          </li>
+          <li class="menu-category" style="margin-right: 50px;">
+            <a href="#" class="menu-title">A propos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shirt</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+
+
+
+          <div class="product-featured">
+
+            <h2 class="title">Details du produit</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-container">
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jacket-1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">JACKET en cuire</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">15 000 Fcfa</p>
+                    </div>
+                    <button class="add-to-cart" data-product-id="1">Ajouter au panier</button>
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <div class="showcase-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star-outline"></ion-icon>
+                          <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <p> disponible: <b>40</b> </p>
+                      </div>
+                      <div class="showcase-status-bar"></div>
+                    </div>
+                    <div class="countdown-box">
+                      <p class="countdown-desc">L'offre prend fin dans:</p>
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">23</p>
+                          <p class="display-text">Jours</p>
+                        </div>
+                        <div class="countdown-content">
+                          <p class="display-number">10</p>
+                          <p class="display-text">Minutes</p>
+                        </div>
+                      </div>
+                    </div>
+<br>
+                    <h3>Contenu de votre panier</h3>
+                    <ul class="cart-list">
+                    </ul>
+                    <br>
+                    <button class="contacter-vendeur" onclick="commanderSurWhatsApp()">Commander via whatsapp</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          Copyright &copy; <a href="#">Anon</a> all rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+      function commanderSurWhatsApp() {
+        // Remplacez le numéro de téléphone par celui du commerçant
+        var numeroWhatsApp = "+2250140990499";
+        
+        // Construisez l'URL WhatsApp avec le numéro de téléphone et un message pré-rempli
+        var urlWhatsApp =
+          "https://api.whatsapp.com/send?phone=" +
+          encodeURIComponent(numeroWhatsApp) +
+          "&text=" +
+          encodeURIComponent("Bonjour, je voudrais commander le produit electronique que j'ai vue sur le site Zoroby.com.");
+
+        // Redirigez l'utilisateur vers l'URL WhatsApp
+        window.location.href = urlWhatsApp;
+      }
+
+    // Fonction pour ajouter un produit au panier
+    function addToCart(product) {
+      // Récupérer le panier existant ou créer un nouveau panier
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      // Vérifier si le produit est déjà dans le panier
+      const existingProductIndex = cart.findIndex(item => item.id === product.id);
+      if (existingProductIndex !== -1) {
+        // Le produit existe déjà dans le panier, incrémenter la quantité
+        cart[existingProductIndex].quantity++;
+      } else {
+        // Le produit n'existe pas encore dans le panier, l'ajouter avec une quantité de 1
+        cart.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
+      }
+      // Enregistrer le panier dans localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+      // Mettre à jour l'affichage du panier
+      renderCart();
+    }
+
+    // Fonction pour supprimer un produit du panier
+    function removeProductFromCart(productId) {
+      // Récupérer le panier existant ou créer un nouveau panier
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      // Retirer le produit du panier
+      cart = cart.filter(item => item.id !== productId);
+      // Enregistrer le panier dans localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+      // Mettre à jour l'affichage du panier
+      renderCart();
+    }
+
+    // Fonction pour afficher le panier
+    function renderCart() {
+      // Récupérer le panier
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      // Sélectionner la liste des produits dans le panier
+      const cartList = document.querySelector('.cart-list');
+      // Vider la liste des produits dans le panier
+      cartList.innerHTML = '';
+      // Ajouter chaque produit dans le panier à la liste
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <h3${item.name}</h3>
+      <p>Prix : ${item.price} €</p>
+      <p>Quantité : ${item.quantity}</p>
+      <button class="remove-from-cart" data-product-id="${item.id}">Retirer du panier</button>
+    `;
+    cartList.appendChild(li);
+  });
+  // Calculer et afficher le total du panier
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  document.querySelector('.cart-total').textContent = total.toFixed(2);
+}
+
+// Ajouter un événement au clic sur les boutons d'ajout au panier
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const productId = button.getAttribute('data-product-id');
+    const product = {
+      id: productId,
+      name: `Produit ${productId}`,
+      price: parseFloat(button.previousElementSibling.textContent),
+    };
+    addToCart(product);
+  });
+});
+
+// Ajouter un événement au clic sur les boutons de suppression du panier
+const removeFromCartButtons = document.querySelectorAll('.remove-from-cart');
+removeFromCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const productId = button.getAttribute('data-product-id');
+    removeProductFromCart(productId);
+  });
+});
+
+// Afficher le panier au chargement de la page
+renderCart();
+</script>
+</body>
+
+</html>
